@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <Space
         android:layout_width="match_parent"
@@ -29,8 +30,11 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_weight="3"
-            android:textOff="OFF"
-            android:textOn="ON" />
+            android:checked="false"
+            android:gravity="center"
+            android:showText="false"
+            android:text="switch"
+            android:textSize="20dp" />
 
         <Space
             android:layout_width="0dp"
@@ -61,7 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:text="ToggleButton" />
+            android:checked="false"
+            android:text="toggle" />
 
         <Space
             android:layout_width="0dp"
@@ -92,6 +97,7 @@
             android:layout_height="80dp"
             android:layout_gravity="center"
             android:layout_weight="2"
+            android:onClick="changeBackground"
             android:text="Click" />
 
         <Space
